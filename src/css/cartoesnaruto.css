@@ -1,0 +1,74 @@
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.cartao {
+    /* position: absolute; */
+    /* top: 0; */
+    width: 30rem;
+    height: 45rem;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+.mostrar {
+    opacity: 1;
+    z-index: 1;
+}
+
+.imagem img {
+    width: 10rem;
+    height: 25rem;
+}
+
+.informacoes{
+    margin-top: 1rem;
+}
+
+.informacoes h3{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.informacoes p{
+    padding:1rem 0 0  2rem ;
+    font-size: 1.4rem;
+}
+
+.seta{
+    background-color: rgb(179, 179, 179);
+    border-radius: 5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+
+.seta.voltar{
+    left: 10rem;
+    transform: rotate(180deg);
+}
+
+.seta.avancar{
+    right: 10rem;  
+}
+
+/* .opacidade{
+    opacity: 0.6;
+    cursor: default;
+} */
