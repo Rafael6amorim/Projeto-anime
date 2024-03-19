@@ -9,13 +9,13 @@
     align-items: flex-end;
     height: 10rem;
     font-size: 2rem;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
 .container{
     display: grid;
     grid: "lista-naruto lista-dragon" 84.4vh /50%;
-    background-color: rgb(62, 95, 124);
+   
    
 }
 

@@ -17,9 +17,19 @@ function(){
     if(imagemAtualNaruto === cartaoNaruto.length -1){
         return;
     }
-    esconderImagem()
+    esconderImagemNaruto()
     imagemAtualNaruto++
-    cartaoNaruto[imagemAtualNaruto].classList.add('mostrar')
+    cartaoNaruto[imagemAtualNaruto].classList.add('mostrar-naruto')
+
+})
+setaVoltarNaruto[0].addEventListener('click',
+function(){
+    if(imagemAtualNaruto === 0){
+        return;
+    }
+    esconderImagemNaruto()
+    imagemAtualNaruto--
+    cartaoNaruto[imagemAtualNaruto].classList.add('mostrar-naruto')
 
 })
 
@@ -29,12 +39,28 @@ function(){
         return;
     }
     
-    esconderImagem()
+    esconderImagemDragon()
     imagemAtualDragon++
-    cartaoDragon[imagemAtualDragon].classList.add('mostrar')
+    cartaoDragon[imagemAtualDragon].classList.add('mostrar-dragon')
+
+})
+setaVoltarDragon[0].addEventListener('click',
+function(){
+    if(imagemAtualDragon === 0){
+        return;
+    }
+    
+    esconderImagemDragon()
+    imagemAtualDragon--
+    cartaoDragon[imagemAtualDragon].classList.add('mostrar-dragon')
+
 })
 
-function esconderImagem(){
-    const imagemAberta = document.querySelector('.mostrar')
-    imagemAberta.classList.remove('mostrar')
+function esconderImagemNaruto(){
+    const imagemAberta = document.querySelector('.mostrar-naruto')
+    imagemAberta.classList.remove('mostrar-naruto')
+}
+function esconderImagemDragon(){
+    const imagemAberta = document.querySelector('.mostrar-dragon')
+    imagemAberta.classList.remove('mostrar-dragon')
 }
